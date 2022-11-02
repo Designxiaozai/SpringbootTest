@@ -23,6 +23,7 @@ public class ALertHanlder implements Runnable{
             String receive = (String)redisTemplate.opsForList().rightPop("receive", 5, TimeUnit.SECONDS);
             if (StringUtils.isBlank(receive)) {
                 System.out.println("当前为空");
+
                 continue;
             }
             System.out.println("开始接收");
