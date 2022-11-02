@@ -1,0 +1,32 @@
+#nacos:
+#  config:
+#    type: yaml
+#    server-addr: 192.168.32.63:8848
+#    context-path: nacos
+#    data-id: test
+#    auto-refresh: true
+#    bootstrap:
+#      enable: true
+#server:
+#  port: 8081
+server:
+  port: 8088
+spring:
+  rabbitmq:
+    host: 192.168.32.55
+    username: admin
+    password: 123456
+    port: 5672
+
+  redis:
+    database: 1
+    host: 192.168.42.42
+    port: 6379
+    timeout: 100000
+    connect-timeout: 100000
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.42.42:3306/ljm-test?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: root
+    password: mesadt
+    mapper-locations: classpath:mapper/*.xml
