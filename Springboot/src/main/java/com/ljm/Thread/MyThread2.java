@@ -1,5 +1,8 @@
 package com.ljm.Thread;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class MyThread2 implements Runnable {
     private String name;
 

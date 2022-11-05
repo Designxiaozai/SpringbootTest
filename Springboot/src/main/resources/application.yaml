@@ -17,7 +17,6 @@ spring:
     username: admin
     password: 123456
     port: 5672
-
   redis:
     database: 1
     host: 192.168.42.42
@@ -30,3 +29,10 @@ spring:
     username: root
     password: mesadt
     mapper-locations: classpath:mapper/*.xml
+minio:
+  endpoint: http://192.168.32.55:9000
+  accessKey: minioadmin
+  secretKey: minioadmin
+logging:
+    config: classpath:logback-spring.xml
+
